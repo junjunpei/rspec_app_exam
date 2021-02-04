@@ -92,7 +92,7 @@ RSpec.describe 'Task', type: :system do
   end
 
   describe 'Task削除' do
-    let!(:task) { create(:task, project_id: project.id) }
+    let!(:task) { create(:task) }
     context '正常系' do
       # FIXME: テストが失敗するので修正してください
       it 'Taskが削除されること' do
